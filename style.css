@@ -1,12 +1,413 @@
+/* =====================================================
+   T2C CANCER CARE PREMIUM
+=====================================================*/
 
-body{margin:0;font-family:Arial,sans-serif;background:#f5f7f9;color:#183153}
-.hero{height:100vh;background:linear-gradient(rgba(10,60,70,.55),rgba(10,60,70,.55)),url("hero.jpg") center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
-.overlay{padding:20px}
-h1{font-size:56px;margin:0}
-p{font-size:22px}
-.btn{display:inline-block;background:#00b140;color:#fff;padding:15px 30px;border-radius:40px;text-decoration:none;font-weight:bold}
-.wrap,.steps{max-width:1100px;margin:auto;padding:60px 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{background:#fff;padding:24px;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
-.steps ol{font-size:20px;line-height:2}
-footer{background:#0b4f5c;color:#fff;text-align:center;padding:30px}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Noto Sans Thai',sans-serif;
+
+background:#F4F8FB;
+
+color:#163A5F;
+
+overflow-x:hidden;
+
+line-height:1.8;
+
+}
+
+/* ========================= */
+
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+/* ========================= */
+
+.navbar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:9999;
+
+background:rgba(255,255,255,.92);
+
+backdrop-filter:blur(18px);
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.navbar .container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 0;
+
+}
+
+.logo img{
+
+height:60px;
+
+}
+
+.navbar ul{
+
+display:flex;
+
+gap:35px;
+
+list-style:none;
+
+}
+
+.navbar a{
+
+text-decoration:none;
+
+font-weight:600;
+
+color:#113B66;
+
+transition:.3s;
+
+}
+
+.navbar a:hover{
+
+color:#00A99D;
+
+}
+
+.line-btn{
+
+background:#00C300;
+
+color:#fff!important;
+
+padding:13px 24px;
+
+border-radius:50px;
+
+box-shadow:0 10px 25px rgba(0,195,0,.35);
+
+}
+
+.line-btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+/* ========================= */
+
+.hero{
+
+height:100vh;
+
+background:
+
+linear-gradient(rgba(5,40,80,.55),
+
+rgba(5,40,80,.55)),
+
+url("hero.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+position:relative;
+
+}
+
+.hero-overlay{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(0,0,0,.25),
+
+rgba(0,0,0,.45)
+
+);
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:5;
+
+color:white;
+
+}
+
+.hero h4{
+
+letter-spacing:5px;
+
+font-size:18px;
+
+margin-bottom:18px;
+
+opacity:.9;
+
+}
+
+.hero h1{
+
+font-size:72px;
+
+font-weight:800;
+
+margin-bottom:15px;
+
+text-shadow:0 5px 25px rgba(0,0,0,.3);
+
+}
+
+.hero h2{
+
+font-size:36px;
+
+margin-bottom:25px;
+
+color:#9EF3E4;
+
+}
+
+.hero p{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:21px;
+
+margin-bottom:40px;
+
+}
+
+/* ========================= */
+
+.hero-button{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.btn-main{
+
+background:#00C300;
+
+padding:18px 40px;
+
+border-radius:50px;
+
+color:white;
+
+font-size:20px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.35s;
+
+box-shadow:0 12px 30px rgba(0,195,0,.35);
+
+}
+
+.btn-main:hover{
+
+transform:translateY(-6px);
+
+}
+
+.btn-outline{
+
+border:2px solid white;
+
+padding:18px 40px;
+
+border-radius:50px;
+
+color:white;
+
+text-decoration:none;
+
+transition:.35s;
+
+}
+
+.btn-outline:hover{
+
+background:white;
+
+color:#103C6C;
+
+}
+
+/* ========================= */
+
+.why{
+
+padding:120px 0;
+
+}
+
+.title{
+
+text-align:center;
+
+margin-bottom:70px;
+
+}
+
+.title h2{
+
+font-size:42px;
+
+color:#103C6C;
+
+}
+
+.title p{
+
+margin-top:15px;
+
+font-size:20px;
+
+color:#5E748F;
+
+}
+
+/* ========================= */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:45px;
+
+border-radius:25px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.4s;
+
+text-align:center;
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.card i{
+
+font-size:48px;
+
+color:#00A99D;
+
+margin-bottom:25px;
+
+}
+
+.card h3{
+
+font-size:26px;
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+color:#666;
+
+}
+
+/* ========================= */
+
+footer{
+
+background:#0C356A;
+
+color:white;
+
+padding:60px 0;
+
+text-align:center;
+
+margin-top:100px;
+
+}
