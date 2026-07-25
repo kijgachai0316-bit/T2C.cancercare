@@ -131,30 +131,49 @@ transform:translateY(-3px);
 /* ========================= */
 
 .hero{
-
-height:100vh;
-
-background:
-
-linear-gradient(rgba(5,40,80,.55),
-
-rgba(5,40,80,.55)),
-
-url("hero.jpg");
-
-background-size:cover;
-
-background-position:center;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-text-align:center;
-
 position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+    background:
+        linear-gradient(rgba(6,35,61,.65),rgba(6,35,61,.75)),
+        url("hospital.jpg") center/cover no-repeat;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.15);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
 
 }
 
@@ -553,4 +572,34 @@ background:white;
 .service-card{
 font-size:50px;
 text-align:center;
+}
+.btn-main{
+    display:inline-block;
+    background:#14b86a;
+    color:white;
+    padding:16px 34px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-main:hover{
+    transform:translateY(-5px);
+    background:#109458;
+}
+
+.btn-outline{
+    display:inline-block;
+    border:2px solid white;
+    color:white;
+    padding:16px 34px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:#0C356A;
 }
