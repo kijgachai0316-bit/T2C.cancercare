@@ -1,43 +1,60 @@
 /* =====================================================
-   T2C CANCER CARE PREMIUM
-=====================================================*/
+   T2C Cancer Care V2
+===================================================== */
+
+/* ---------- Reset ---------- */
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
+    font-family:'Noto Sans Thai',sans-serif;
+    background:#F5F8FC;
+    color:#163A5F;
+    line-height:1.8;
+    overflow-x:hidden;
+}
 
-font-family:'Noto Sans Thai',sans-serif;
+/* ---------- Theme ---------- */
 
-background:#F4F8FB;
+:root{
 
-color:#163A5F;
+    --primary:#0C356A;
+    --secondary:#00A99D;
+    --line:#00C300;
 
-overflow-x:hidden;
+    --white:#ffffff;
 
-line-height:1.8;
+    --light:#F5F8FC;
+
+    --text:#163A5F;
+
+    --gray:#6B7B8D;
+
+    --shadow:0 15px 35px rgba(0,0,0,.08);
+
+    --radius:22px;
+
+    --transition:.35s;
 
 }
 
-/* ========================= */
+/* ---------- Container ---------- */
 
 .container{
 
-width:90%;
+    width:min(90%,1200px);
 
-max-width:1200px;
-
-margin:auto;
+    margin:auto;
 
 }
-
 /* ========================= */
 
 .navbar{
