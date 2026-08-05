@@ -1580,3 +1580,192 @@ footer p:first-of-type{
     }
 
 }
+
+
+/* =========================================
+   T2C NAVBAR PREMIUM UPDATE
+========================================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    z-index:9999;
+
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(15,86,143,.06);
+
+    box-shadow:
+        0 5px 25px rgba(15,53,90,.06);
+}
+
+.navbar .container{
+    min-height:90px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:35px;
+}
+
+/* LOGO */
+
+.navbar .logo img{
+    display:block;
+    height:62px;
+    width:auto;
+}
+
+/* MENU */
+
+.navbar ul{
+    display:flex;
+    align-items:center;
+
+    gap:42px;
+
+    margin:0;
+    padding:0;
+
+    list-style:none;
+}
+
+.navbar ul a{
+    position:relative;
+
+    color:#172033;
+
+    font-size:16px;
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.3s ease;
+}
+
+/* เส้นใต้เวลาเอาเมาส์ชี้ */
+
+.navbar ul a::after{
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    bottom:-8px;
+
+    width:0;
+    height:2px;
+
+    background:#00A99D;
+
+    transform:translateX(-50%);
+
+    transition:.3s ease;
+}
+
+.navbar ul a:hover{
+    color:#0f568f;
+}
+
+.navbar ul a:hover::after{
+    width:100%;
+}
+
+
+/* LINE BUTTON */
+
+.navbar .line-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
+
+    padding:13px 25px;
+
+    border-radius:50px;
+
+    background:#0f568f;
+    color:#ffffff !important;
+
+    text-decoration:none;
+    font-weight:600;
+
+    box-shadow:
+        0 10px 25px rgba(15,86,143,.18);
+
+    transition:.3s ease;
+}
+
+.navbar .line-btn:hover{
+    background:#06c755;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 14px 30px rgba(6,199,85,.22);
+}
+
+
+/* เวลากดเมนูแล้วเลื่อนไป Section
+   ป้องกัน Navbar บังหัวข้อ */
+
+section{
+    scroll-margin-top:100px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:900px){
+
+    .navbar .container{
+        min-height:80px;
+    }
+
+    .navbar ul{
+        gap:20px;
+    }
+
+    .navbar .logo img{
+        height:55px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:700px){
+
+    .navbar .container{
+        min-height:72px;
+    }
+
+    .navbar .logo img{
+        height:48px;
+    }
+
+    /* ซ่อนเมนูตรงกลางก่อน
+       เดี๋ยวเราทำ Mobile Menu ต่อ */
+
+    .navbar ul{
+        display:none;
+    }
+
+    .navbar .line-btn{
+        padding:10px 17px;
+        font-size:14px;
+    }
+
+}
