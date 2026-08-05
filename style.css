@@ -1309,3 +1309,274 @@ h2{
     }
 
 }
+
+
+/* =========================================
+   T2C CONTACT + FOOTER PREMIUM
+========================================= */
+
+/* CONTACT */
+
+.contact{
+    position:relative;
+    padding:110px 0;
+    overflow:hidden;
+
+    text-align:center;
+    color:#ffffff;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(0,169,157,.28),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #0b3155 0%,
+            #0f568f 55%,
+            #087f86 100%
+        );
+}
+
+/* DECORATIVE LIGHT */
+
+.contact::before{
+    content:"";
+
+    position:absolute;
+    width:420px;
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    top:-230px;
+    right:-100px;
+}
+
+.contact::after{
+    content:"";
+
+    position:absolute;
+    width:300px;
+    height:300px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.04);
+
+    bottom:-180px;
+    left:-80px;
+}
+
+
+/* KEEP CONTENT ABOVE BACKGROUND */
+
+.contact .container{
+    position:relative;
+    z-index:2;
+}
+
+
+/* CONTACT TITLE */
+
+.contact h2{
+    color:#ffffff;
+
+    font-size:46px;
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+
+/* CONTACT TEXT */
+
+.contact p{
+    max-width:650px;
+
+    margin:0 auto 35px;
+
+    color:rgba(255,255,255,.90);
+
+    font-size:20px;
+    line-height:1.8;
+}
+
+
+/* CONTACT LINE BUTTON */
+
+.contact .btn-main{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    min-height:60px;
+
+    padding:0 38px;
+
+    background:#06c755;
+    color:#ffffff;
+
+    border-radius:50px;
+
+    font-size:18px;
+    font-weight:600;
+
+    text-decoration:none;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.18);
+
+    transition:.35s ease;
+}
+
+.contact .btn-main:hover{
+    background:#05b64d;
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.25);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer{
+    margin:0;
+
+    padding:55px 20px;
+
+    text-align:center;
+
+    background:#071d31;
+    color:#ffffff;
+}
+
+footer .container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+footer img{
+    height:75px !important;
+    width:auto;
+
+    margin-bottom:15px;
+
+    background:#ffffff;
+
+    padding:8px 14px;
+
+    border-radius:14px;
+}
+
+footer p{
+    margin:5px 0;
+
+    color:rgba(255,255,255,.72);
+
+    font-size:15px;
+}
+
+footer p:first-of-type{
+    color:#ffffff;
+
+    font-size:20px;
+    font-weight:600;
+}
+
+
+/* =========================================
+   FLOATING LINE BUTTON
+========================================= */
+
+.line-float{
+    position:fixed;
+
+    right:28px;
+    bottom:28px;
+
+    width:64px;
+    height:64px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#06c755;
+    color:#ffffff;
+
+    font-size:32px;
+
+    text-decoration:none;
+
+    z-index:9999;
+
+    border:4px solid #ffffff;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.22);
+
+    transition:.3s ease;
+}
+
+.line-float:hover{
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.28);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:600px){
+
+    .contact{
+        padding:75px 0;
+    }
+
+    .contact h2{
+        font-size:34px;
+    }
+
+    .contact p{
+        font-size:17px;
+    }
+
+    .contact .btn-main{
+        width:100%;
+        max-width:320px;
+    }
+
+    footer{
+        padding:45px 15px;
+    }
+
+    footer img{
+        height:65px !important;
+    }
+
+    .line-float{
+        width:56px;
+        height:56px;
+
+        right:18px;
+        bottom:18px;
+
+        font-size:28px;
+    }
+
+}
