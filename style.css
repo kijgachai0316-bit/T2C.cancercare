@@ -2413,3 +2413,302 @@ section{
     }
 
 }
+
+
+/* =========================================
+   T2C PREMIUM SERVICES V2
+========================================= */
+
+.services{
+    position:relative;
+    padding:120px 0;
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(0,169,157,.08),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #f7fbff 0%,
+            #ffffff 100%
+        );
+}
+
+/* TITLE */
+
+.services h2{
+    position:relative;
+    text-align:center;
+
+    font-size:46px;
+    font-weight:700;
+
+    color:#172033;
+
+    margin-bottom:65px;
+}
+
+.services h2::before{
+    content:"OUR SERVICES";
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#00A99D;
+
+    font-size:13px;
+    font-weight:700;
+
+    letter-spacing:3px;
+}
+
+.services h2::after{
+    content:"";
+
+    display:block;
+
+    width:55px;
+    height:4px;
+
+    margin:18px auto 0;
+
+    border-radius:10px;
+
+    background:linear-gradient(
+        90deg,
+        #0f568f,
+        #00A99D
+    );
+}
+
+
+/* GRID */
+
+.service-grid{
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    counter-reset:service;
+}
+
+
+/* CARD */
+
+.service-item{
+    counter-increment:service;
+
+    position:relative;
+
+    min-height:320px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-end;
+
+    padding:35px;
+
+    overflow:hidden;
+
+    text-align:left;
+
+    background:#ffffff;
+
+    border:1px solid rgba(15,86,143,.08);
+
+    border-radius:25px;
+
+    box-shadow:
+        0 15px 40px rgba(15,53,90,.08);
+
+    transition:.4s ease;
+}
+
+
+/* BIG NUMBER */
+
+.service-item::before{
+    content:"0" counter(service);
+
+    position:absolute;
+
+    top:20px;
+    right:25px;
+
+    color:rgba(15,86,143,.08);
+
+    font-size:65px;
+    line-height:1;
+
+    font-weight:800;
+
+    transition:.4s ease;
+}
+
+
+/* BOTTOM DECORATION */
+
+.service-item::after{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:100%;
+    height:5px;
+
+    background:linear-gradient(
+        90deg,
+        #0f568f,
+        #00A99D
+    );
+
+    transform:scaleX(0);
+    transform-origin:left;
+
+    transition:.4s ease;
+}
+
+
+/* ICON */
+
+.service-item > i{
+    width:68px;
+    height:68px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:28px;
+
+    border-radius:19px;
+
+    background:linear-gradient(
+        135deg,
+        #e8f4ff,
+        #e5faf6
+    );
+
+    color:#0f568f;
+
+    font-size:30px;
+
+    transition:.4s ease;
+}
+
+
+/* TITLE */
+
+.service-item h3{
+    position:relative;
+    z-index:2;
+
+    color:#172033;
+
+    font-size:21px;
+    font-weight:700;
+
+    margin-bottom:12px;
+}
+
+
+/* TEXT */
+
+.service-item p{
+    position:relative;
+    z-index:2;
+
+    color:#68798c;
+
+    font-size:15px;
+    line-height:1.7;
+}
+
+
+/* HOVER */
+
+.service-item:hover{
+    transform:translateY(-12px);
+
+    border-color:rgba(0,169,157,.20);
+
+    box-shadow:
+        0 25px 55px rgba(15,53,90,.15);
+}
+
+.service-item:hover::before{
+    color:rgba(0,169,157,.12);
+
+    transform:translateY(-3px);
+}
+
+.service-item:hover::after{
+    transform:scaleX(1);
+}
+
+.service-item:hover > i{
+    color:#ffffff;
+
+    background:linear-gradient(
+        135deg,
+        #0f568f,
+        #00A99D
+    );
+
+    transform:rotate(-5deg) scale(1.07);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:1000px){
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:600px){
+
+    .services{
+        padding:75px 0;
+    }
+
+    .services h2{
+        font-size:34px;
+        margin-bottom:45px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .service-item{
+        min-height:250px;
+        padding:30px;
+    }
+
+    .service-item::before{
+        font-size:55px;
+    }
+
+}
