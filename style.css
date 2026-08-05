@@ -2809,3 +2809,33 @@ section{
 <!-- HOSPITAL -->
 
 <section id="hospital" class="hospital">
+
+
+/* ===== FIX T2C FOOTER LOGO ===== */
+
+footer img{
+    width:auto !important;
+    height:auto !important;
+
+    max-width:180px !important;
+    max-height:85px !important;
+
+    object-fit:contain !important;
+
+    display:block;
+    margin:0 auto 18px !important;
+
+    border-radius:0 !important;
+}
+
+footer{
+    text-align:center;
+}
+
+footer .logo img,
+.footer-logo img{
+    width:auto !important;
+    height:75px !important;
+    max-width:200px !important;
+    object-fit:contain !important;
+}
