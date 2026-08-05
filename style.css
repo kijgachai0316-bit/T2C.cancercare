@@ -2712,3 +2712,83 @@ section{
     }
 
 }
+
+
+/* =========================================
+   EMERGENCY ABOUT FIX
+========================================= */
+
+.about-premium .container{
+    width:min(90%,1200px);
+    margin:0 auto;
+}
+
+.about-premium-grid{
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:65px;
+}
+
+.about-visual,
+.about-content{
+    min-width:0;
+}
+
+.about-content{
+    width:100%;
+    max-width:560px;
+}
+
+.about-content h2{
+    font-size:clamp(34px,3vw,43px);
+    line-height:1.35;
+    word-break:normal;
+    overflow-wrap:normal;
+}
+
+.about-lead{
+    width:100%;
+    max-width:560px;
+}
+
+.about-image-card{
+    width:100%;
+}
+
+.about-image-card img{
+    width:100%;
+    height:520px;
+    min-height:0;
+    object-fit:cover;
+}
+
+/* TABLET */
+
+@media(max-width:950px){
+
+    .about-premium-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-content{
+        max-width:700px;
+        margin:0 auto;
+    }
+
+    .about-visual{
+        width:100%;
+        max-width:700px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .about-image-card img{
+        height:300px;
+    }
+
+    .about-content h2{
+        font-size:30px;
+    }
+}
