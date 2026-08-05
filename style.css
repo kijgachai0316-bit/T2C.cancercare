@@ -2042,3 +2042,374 @@ section{
     }
 
 }
+
+
+/* =========================================
+   T2C PREMIUM ABOUT SECTION
+========================================= */
+
+.about-premium{
+    position:relative;
+    padding:120px 0;
+    overflow:hidden;
+
+    background:#ffffff;
+}
+
+.about-premium::before{
+    content:"";
+
+    position:absolute;
+    width:500px;
+    height:500px;
+
+    left:-280px;
+    top:50px;
+
+    border-radius:50%;
+
+    background:rgba(0,169,157,.06);
+}
+
+
+/* GRID */
+
+.about-premium-grid{
+    position:relative;
+    z-index:2;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:85px;
+
+    align-items:center;
+}
+
+
+/* ================= IMAGE ================= */
+
+.about-visual{
+    position:relative;
+    padding:20px 20px 45px 0;
+}
+
+.about-image-card{
+    position:relative;
+    overflow:hidden;
+
+    border-radius:30px;
+
+    box-shadow:
+        0 30px 70px rgba(15,53,90,.18);
+}
+
+.about-image-card::after{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 50%,
+            rgba(7,40,70,.20)
+        );
+
+    pointer-events:none;
+}
+
+.about-image-card img{
+    display:block;
+
+    width:100%;
+    min-height:500px;
+
+    object-fit:cover;
+
+    transition:.6s ease;
+}
+
+.about-image-card:hover img{
+    transform:scale(1.035);
+}
+
+
+/* FLOATING BADGE */
+
+.about-badge{
+    position:absolute;
+
+    right:-25px;
+    bottom:0;
+
+    max-width:360px;
+
+    display:flex;
+    align-items:center;
+
+    gap:17px;
+
+    padding:22px 25px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 20px 50px rgba(15,53,90,.18);
+}
+
+.about-badge > i{
+    flex:0 0 52px;
+
+    width:52px;
+    height:52px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f568f,
+            #00A99D
+        );
+
+    color:#ffffff;
+
+    font-size:23px;
+}
+
+.about-badge strong{
+    display:block;
+
+    color:#0f568f;
+
+    font-size:14px;
+    letter-spacing:.6px;
+
+    margin-bottom:3px;
+}
+
+.about-badge span{
+    display:block;
+
+    color:#68798c;
+
+    font-size:13px;
+    line-height:1.5;
+}
+
+
+/* ================= CONTENT ================= */
+
+.section-label{
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    color:#00A99D;
+
+    font-size:14px;
+    font-weight:700;
+
+    letter-spacing:1.5px;
+}
+
+.about-content h2{
+    color:#172033;
+
+    font-size:43px;
+    line-height:1.35;
+
+    margin-bottom:25px;
+
+    font-weight:700;
+}
+
+.about-content h2 span{
+    color:#0f568f;
+}
+
+.about-lead{
+    color:#5f7185;
+
+    font-size:17px;
+    line-height:1.95;
+
+    margin-bottom:32px;
+}
+
+
+/* POINTS */
+
+.about-points{
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+
+    margin-bottom:35px;
+}
+
+.about-point{
+    display:flex;
+
+    gap:15px;
+
+    align-items:flex-start;
+}
+
+.about-point > i{
+    color:#06b95c;
+
+    font-size:20px;
+
+    margin-top:4px;
+}
+
+.about-point strong{
+    display:block;
+
+    color:#172033;
+
+    font-size:17px;
+
+    margin-bottom:3px;
+}
+
+.about-point span{
+    display:block;
+
+    color:#6b7b8d;
+
+    font-size:15px;
+
+    line-height:1.6;
+}
+
+
+/* BUTTON */
+
+.about-btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:12px;
+
+    min-height:56px;
+
+    padding:0 28px;
+
+    border-radius:50px;
+
+    background:#0f568f;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:16px;
+    font-weight:600;
+
+    box-shadow:
+        0 12px 30px rgba(15,86,143,.20);
+
+    transition:.35s ease;
+}
+
+.about-btn i{
+    transition:.35s ease;
+}
+
+.about-btn:hover{
+    background:#00A99D;
+
+    transform:translateY(-4px);
+}
+
+.about-btn:hover i{
+    transform:translateX(5px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:950px){
+
+    .about-premium{
+        padding:90px 0;
+    }
+
+    .about-premium-grid{
+        grid-template-columns:1fr;
+
+        gap:65px;
+    }
+
+    .about-visual{
+        max-width:700px;
+
+        margin:auto;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:600px){
+
+    .about-premium{
+        padding:70px 0;
+    }
+
+    .about-premium-grid{
+        gap:50px;
+    }
+
+    .about-visual{
+        padding:0 0 55px;
+    }
+
+    .about-image-card{
+        border-radius:22px;
+    }
+
+    .about-image-card img{
+        min-height:300px;
+    }
+
+    .about-badge{
+        right:10px;
+        left:10px;
+
+        max-width:none;
+
+        padding:18px;
+    }
+
+    .about-content h2{
+        font-size:32px;
+    }
+
+    .about-lead{
+        font-size:16px;
+    }
+
+    .about-btn{
+        width:100%;
+    }
+
+}
