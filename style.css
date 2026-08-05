@@ -1466,16 +1466,24 @@ footer .container{
 }
 
 footer img{
-    height:75px !important;
-    width:auto;
+    display:block !important;
 
-    margin-bottom:15px;
+    width:160px !important;
+    height:auto !important;
 
-    background:#ffffff;
+    max-width:160px !important;
+    max-height:90px !important;
 
-    padding:8px 14px;
+    object-fit:contain !important;
+    object-position:center !important;
 
-    border-radius:14px;
+    margin:0 auto 20px !important;
+
+    padding:0 !important;
+    background:transparent !important;
+    border:none !important;
+    border-radius:0 !important;
+    box-shadow:none !important;
 }
 
 footer p{
