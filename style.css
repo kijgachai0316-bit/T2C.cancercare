@@ -394,3 +394,185 @@ h2{
 }
 
 }
+
+/* =========================================
+   T2C PREMIUM UPDATE
+   WHY SECTION 3 x 2
+========================================= */
+
+/* WHY SECTION */
+
+.why{
+    padding:100px 0;
+    background:#f4f8fc;
+}
+
+.why h2{
+    text-align:center;
+    font-size:46px;
+    font-weight:700;
+    color:#172033;
+    margin-bottom:15px;
+}
+
+.why .section-text{
+    max-width:850px;
+    margin:0 auto 60px;
+    text-align:center;
+    font-size:19px;
+    color:#607086;
+}
+
+
+/* 3 CARDS PER ROW */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+}
+
+
+/* CARD DESIGN */
+
+.card{
+    position:relative;
+    background:#ffffff;
+    padding:42px 30px;
+    min-height:280px;
+
+    border-radius:24px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    border:1px solid rgba(15,76,129,.08);
+
+    box-shadow:
+        0 12px 35px rgba(15,76,129,.08);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+
+/* CARD HOVER */
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 22px 50px rgba(15,76,129,.15);
+
+    border-color:rgba(15,76,129,.20);
+}
+
+
+/* ICON */
+
+.card i{
+    width:80px;
+    height:80px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#eaf5ff;
+
+    color:#0f568f;
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+    transition:.35s;
+}
+
+
+/* ICON HOVER */
+
+.card:hover i{
+    background:#0f568f;
+    color:#ffffff;
+
+    transform:scale(1.08);
+}
+
+
+/* CARD TITLE */
+
+.card h3{
+    font-size:23px;
+    font-weight:700;
+
+    color:#172033;
+
+    margin-bottom:12px;
+}
+
+
+/* CARD TEXT */
+
+.card p{
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:#53657a;
+
+    max-width:300px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:900px){
+
+    .cards{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:600px){
+
+    .why{
+        padding:70px 0;
+    }
+
+    .why h2{
+        font-size:34px;
+    }
+
+    .why .section-text{
+        font-size:16px;
+        margin-bottom:40px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .card{
+        min-height:auto;
+        padding:35px 25px;
+    }
+
+}
