@@ -1096,3 +1096,216 @@ h2{
     }
 
 }
+
+/* =========================================
+   T2C TREATMENT TIMELINE PREMIUM
+========================================= */
+
+.timeline{
+    position:relative;
+    padding:110px 0 120px;
+    background:#ffffff;
+    overflow:hidden;
+}
+
+.timeline h2{
+    text-align:center;
+    font-size:46px;
+    font-weight:700;
+    color:#172033;
+    margin-bottom:70px;
+}
+
+
+/* TIMELINE GRID */
+
+.timeline-grid{
+    position:relative;
+
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+
+    gap:28px;
+
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* CONNECTING LINE */
+
+.timeline-grid::before{
+    content:"";
+
+    position:absolute;
+
+    top:50px;
+    left:10%;
+    right:10%;
+
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        #0f568f,
+        #00A99D
+    );
+
+    z-index:0;
+}
+
+
+/* EACH STEP */
+
+.timeline-grid > div{
+    position:relative;
+    z-index:2;
+
+    min-height:190px;
+
+    padding:75px 20px 30px;
+
+    background:#ffffff;
+
+    color:#172033;
+
+    border-radius:22px;
+
+    border:1px solid #e1edf7;
+
+    box-shadow:
+        0 12px 35px rgba(15,53,90,.08);
+
+    text-align:center;
+
+    font-size:18px;
+    font-weight:600;
+
+    transition:.35s ease;
+}
+
+
+/* NUMBER CIRCLE */
+
+.timeline-grid > div::before{
+    position:absolute;
+
+    top:-2px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:68px;
+    height:68px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #0f568f,
+        #00A99D
+    );
+
+    color:#ffffff;
+
+    font-size:23px;
+    font-weight:700;
+
+    border:7px solid #ffffff;
+
+    box-shadow:
+        0 8px 22px rgba(15,86,143,.25);
+}
+
+
+/* NUMBERS */
+
+.timeline-grid > div:nth-child(1)::before{
+    content:"1";
+}
+
+.timeline-grid > div:nth-child(2)::before{
+    content:"2";
+}
+
+.timeline-grid > div:nth-child(3)::before{
+    content:"3";
+}
+
+.timeline-grid > div:nth-child(4)::before{
+    content:"4";
+}
+
+.timeline-grid > div:nth-child(5)::before{
+    content:"5";
+}
+
+
+/* HOVER */
+
+.timeline-grid > div:hover{
+    transform:translateY(-8px);
+
+    border-color:rgba(0,169,157,.30);
+
+    box-shadow:
+        0 22px 45px rgba(15,53,90,.14);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:900px){
+
+    .timeline{
+        padding:80px 0;
+    }
+
+    .timeline h2{
+        font-size:38px;
+        margin-bottom:50px;
+    }
+
+    .timeline-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .timeline-grid::before{
+        display:none;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:600px){
+
+    .timeline{
+        padding:65px 0;
+    }
+
+    .timeline h2{
+        font-size:32px;
+        margin-bottom:45px;
+    }
+
+    .timeline-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .timeline-grid > div{
+        min-height:150px;
+        padding:70px 20px 25px;
+    }
+
+}
