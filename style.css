@@ -1875,3 +1875,170 @@ section{
         height:42px;
     }
 }
+
+
+/* =========================================
+   T2C PREMIUM TRUST BAR
+========================================= */
+
+.trust-bar{
+    position:relative;
+    z-index:10;
+
+    margin-top:-45px;
+    padding:0 0 65px;
+
+    background:transparent;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    background:#ffffff;
+
+    border:1px solid rgba(15,86,143,.08);
+    border-radius:26px;
+
+    box-shadow:
+        0 25px 60px rgba(15,53,90,.12);
+
+    overflow:hidden;
+}
+
+.trust-item{
+    position:relative;
+
+    display:flex;
+    align-items:center;
+
+    gap:18px;
+
+    min-height:125px;
+
+    padding:25px 28px;
+
+    transition:.35s ease;
+}
+
+.trust-item:not(:last-child)::after{
+    content:"";
+
+    position:absolute;
+
+    right:0;
+    top:25%;
+
+    width:1px;
+    height:50%;
+
+    background:#e1ebf4;
+}
+
+.trust-item:hover{
+    background:#f5fbff;
+}
+
+.trust-icon{
+    flex:0 0 55px;
+
+    width:55px;
+    height:55px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e7f4ff,
+            #e5faf6
+        );
+
+    color:#0f568f;
+
+    font-size:24px;
+
+    transition:.35s ease;
+}
+
+.trust-item:hover .trust-icon{
+    color:#ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f568f,
+            #00A99D
+        );
+
+    transform:translateY(-3px);
+}
+
+.trust-item strong{
+    display:block;
+
+    margin-bottom:4px;
+
+    color:#172033;
+
+    font-size:17px;
+    font-weight:700;
+}
+
+.trust-item span{
+    display:block;
+
+    color:#68798c;
+
+    font-size:14px;
+    line-height:1.5;
+}
+
+
+/* TABLET */
+
+@media(max-width:1000px){
+
+    .trust-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .trust-item:nth-child(2)::after{
+        display:none;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .trust-bar{
+        margin-top:-20px;
+        padding-bottom:45px;
+    }
+
+    .trust-grid{
+        grid-template-columns:1fr;
+        border-radius:20px;
+    }
+
+    .trust-item{
+        min-height:100px;
+        padding:20px;
+    }
+
+    .trust-item::after{
+        display:none;
+    }
+
+    .trust-item:not(:last-child){
+        border-bottom:1px solid #e8eef4;
+    }
+
+}
