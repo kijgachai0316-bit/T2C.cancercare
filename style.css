@@ -2839,3 +2839,34 @@ footer .logo img,
     max-width:200px !important;
     object-fit:contain !important;
 }
+
+
+/* =====================================
+   FINAL FOOTER LOGO FIX
+===================================== */
+
+footer .footer-logo{
+    display:block !important;
+
+    width:160px !important;
+    height:auto !important;
+
+    max-width:160px !important;
+    max-height:none !important;
+
+    object-fit:contain !important;
+
+    margin:0 auto 20px !important;
+    padding:0 !important;
+
+    border:0 !important;
+    border-radius:0 !important;
+
+    background:transparent !important;
+
+    box-shadow:none !important;
+}
+
+footer .container{
+    text-align:center;
+}
