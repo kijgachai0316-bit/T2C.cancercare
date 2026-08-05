@@ -2878,3 +2878,366 @@ footer .footer-logo{
 footer .container{
     text-align:center;
 }
+
+
+/* =========================================
+   T2C PARTNER HOSPITAL PREMIUM
+========================================= */
+
+.hospital-premium{
+    position:relative;
+    padding:120px 0;
+    overflow:hidden;
+
+    background:#ffffff;
+}
+
+
+/* HEADER */
+
+.hospital-heading{
+    max-width:760px;
+    margin:0 auto 65px;
+    text-align:center;
+}
+
+.hospital-label{
+    display:inline-block;
+
+    margin-bottom:12px;
+
+    color:#00A99D;
+
+    font-size:13px;
+    font-weight:800;
+
+    letter-spacing:3px;
+}
+
+.hospital-heading h2{
+    margin-bottom:15px;
+
+    color:#172033;
+
+    font-size:46px;
+    line-height:1.3;
+}
+
+.hospital-heading p{
+    color:#68798c;
+
+    font-size:17px;
+    line-height:1.8;
+}
+
+
+/* MAIN CARD */
+
+.hospital-premium-card{
+    display:grid;
+
+    grid-template-columns:
+        minmax(0,1.05fr)
+        minmax(0,.95fr);
+
+    align-items:stretch;
+
+    overflow:hidden;
+
+    background:#f5f9fd;
+
+    border:1px solid rgba(15,86,143,.08);
+    border-radius:32px;
+
+    box-shadow:
+        0 30px 70px rgba(15,53,90,.12);
+}
+
+
+/* IMAGE */
+
+.hospital-photo{
+    position:relative;
+
+    min-height:560px;
+
+    overflow:hidden;
+}
+
+.hospital-photo > img{
+    display:block;
+
+    width:100% !important;
+    height:100% !important;
+
+    max-width:none !important;
+    max-height:none !important;
+
+    object-fit:cover !important;
+
+    margin:0 !important;
+    padding:0 !important;
+
+    border-radius:0 !important;
+}
+
+
+/* IMAGE GRADIENT */
+
+.hospital-photo::after{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 55%,
+            rgba(5,38,68,.35)
+        );
+
+    pointer-events:none;
+}
+
+
+/* FLOATING BADGE */
+
+.hospital-photo-badge{
+    position:absolute;
+
+    z-index:3;
+
+    left:28px;
+    bottom:28px;
+
+    display:flex;
+    align-items:center;
+
+    gap:14px;
+
+    padding:16px 20px;
+
+    background:rgba(255,255,255,.94);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:17px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.15);
+}
+
+.hospital-photo-badge > i{
+    width:44px;
+    height:44px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:#0f568f;
+
+    color:#ffffff;
+}
+
+.hospital-photo-badge strong{
+    display:block;
+
+    color:#172033;
+
+    font-size:14px;
+}
+
+.hospital-photo-badge span{
+    display:block;
+
+    margin-top:1px;
+
+    color:#68798c;
+
+    font-size:12px;
+}
+
+
+/* CONTENT */
+
+.hospital-info{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:65px;
+}
+
+.hospital-small-label{
+    margin-bottom:13px;
+
+    color:#00A99D;
+
+    font-size:12px;
+    font-weight:800;
+
+    letter-spacing:2.5px;
+}
+
+.hospital-info h3{
+    margin-bottom:20px;
+
+    color:#0f568f;
+
+    font-size:38px;
+    line-height:1.3;
+}
+
+.hospital-description{
+    margin-bottom:30px;
+
+    color:#5f7185;
+
+    font-size:16px;
+    line-height:1.9;
+}
+
+
+/* FEATURES */
+
+.hospital-features{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+    margin-bottom:35px;
+}
+
+.hospital-features > div{
+    display:flex;
+    align-items:flex-start;
+
+    gap:10px;
+
+    color:#26394d;
+
+    font-size:14px;
+    line-height:1.55;
+}
+
+.hospital-features i{
+    margin-top:3px;
+
+    color:#06b95c;
+
+    font-size:17px;
+}
+
+
+/* BUTTON */
+
+.hospital-btn-primary{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:11px;
+
+    min-height:55px;
+
+    padding:0 28px;
+
+    border-radius:50px;
+
+    background:#0f568f;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.35s ease;
+
+    box-shadow:
+        0 12px 30px rgba(15,86,143,.20);
+}
+
+.hospital-btn-primary:hover{
+    background:#00A99D;
+
+    transform:translateY(-4px);
+}
+
+.hospital-btn-primary i{
+    transition:.3s ease;
+}
+
+.hospital-btn-primary:hover i{
+    transform:translateX(5px);
+}
+
+
+/* TABLET */
+
+@media(max-width:950px){
+
+    .hospital-premium-card{
+        grid-template-columns:1fr;
+    }
+
+    .hospital-photo{
+        min-height:450px;
+    }
+
+    .hospital-info{
+        padding:50px;
+    }
+}
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .hospital-premium{
+        padding:75px 0;
+    }
+
+    .hospital-heading{
+        margin-bottom:40px;
+    }
+
+    .hospital-heading h2{
+        font-size:34px;
+    }
+
+    .hospital-photo{
+        min-height:300px;
+    }
+
+    .hospital-photo-badge{
+        left:15px;
+        bottom:15px;
+
+        padding:12px 15px;
+    }
+
+    .hospital-info{
+        padding:32px 25px;
+    }
+
+    .hospital-info h3{
+        font-size:29px;
+    }
+
+    .hospital-features{
+        grid-template-columns:1fr;
+    }
+
+    .hospital-btn-primary{
+        width:100%;
+    }
+}
