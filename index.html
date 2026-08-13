@@ -1,980 +1,1028 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>T2C Cancer Care | ประสานงานรักษามะเร็งที่ประเทศจีน</title>
+  <title>T2C Cancer Care | ประสานงานรักษามะเร็งที่ประเทศจีน</title>
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- ================= NAVBAR ================= -->
 
 <header class="header">
 
-<div class="container nav">
+  <div class="container nav">
 
-<a href="#" class="logo">
-<img src="logo.png" alt="T2C">
-</a>
+    <a href="#" class="logo">
+      <img src="logo.png" alt="T2C">
+    </a>
 
-<nav>
+    <nav>
+      <ul>
+        <li><a href="#about">เกี่ยวกับเรา</a></li>
+        <li><a href="#service">บริการ</a></li>
+        <li><a href="#hospital">โรงพยาบาล</a></li>
+        <li><a href="#contact">ติดต่อ</a></li>
+      </ul>
+    </nav>
 
-<ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-<li><a href="#about">เกี่ยวกับเรา</a></li>
-
-<li><a href="#service">บริการ</a></li>
-
-<li><a href="#hospital">โรงพยาบาล</a></li>
-
-<li><a href="#contact">ติดต่อ</a></li>
-
-</ul>
-
-</nav>
-
-<a href="https://line.me/R/ti/p/@394txvpy" class="btn-main">
-    ปรึกษาฟรีผ่าน LINE
-</a>
-
-<button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู">
-    <i class="fa-solid fa-bars"></i>
-</button>
-
-</div>
+  </div>
 
 </header>
 
-<!-- ================= HERO NEW ================= -->
+
+<!-- ================= HERO ================= -->
 
 <section class="hero hero-clean">
 
-    <div class="container hero-clean-grid">
+  <div class="container hero-clean-grid">
 
-        <!-- LEFT -->
+    <!-- LEFT -->
 
-        <div class="hero-clean-content">
+    <div class="hero-clean-content">
 
-            <span class="hero-clean-badge">
-                <i class="fa-solid fa-heart-pulse"></i>
-                T2C Cancer Care
-            </span>
+      <span class="hero-clean-badge">
+        <i class="fa-solid fa-heart-pulse"></i>
+        T2C Cancer Care
+      </span>
 
-            <h1>
-                พาผู้ป่วยไทย<br>
-                เข้ารับการรักษาโรคมะเร็ง<br>
-                <span>ที่ประเทศจีน</span>
-            </h1>
+      <h1>
+        พาผู้ป่วยไทย<br>
+        เข้ารับการรักษาโรคมะเร็ง<br>
+        <span>ที่ประเทศจีน</span>
+      </h1>
 
-            <p class="hero-clean-lead">
-                ให้คำปรึกษาและประสานงานโรงพยาบาล
-                ดูแลเรื่องเอกสาร วีซ่า ล่าม และการเดินทาง
-                พร้อมช่วยประสานตลอดเส้นทางการรักษา
-            </p>
+      <p class="hero-clean-lead">
+        ประสานข้อมูล โรงพยาบาล เอกสาร ภาษา และการเดินทาง
+        เพื่อให้ผู้ป่วยไทยเตรียมตัวเข้ารับการรักษาในประเทศจีนได้อย่างเป็นระบบ
+      </p>
 
+      <div class="hero-clean-buttons">
 
-            <div class="hero-clean-buttons">
+        <a href="https://line.me/R/ti/p/@394txvpy"
+           class="hero-line-btn">
 
-                <a href="https://line.me/R/ti/p/@394txvpy"
-                   class="hero-line-btn">
-                    <i class="fa-brands fa-line"></i>
-                    ปรึกษาฟรีผ่าน LINE
-                </a>
+          <i class="fa-brands fa-line"></i>
+          ปรึกษาฟรีผ่าน LINE
 
-                <a href="#about"
-                   class="hero-more-btn">
-                    รายละเอียดเพิ่มเติม
-                </a>
+        </a>
 
-            </div>
+        <a href="#about"
+           class="hero-more-btn">
+          รายละเอียดเพิ่มเติม
+        </a>
 
-
-            <div class="hero-clean-features">
-
-                <div class="hero-feature">
-                    <i class="fa-solid fa-file-medical"></i>
-
-                    <div>
-                        <strong>ประเมินก่อนเดินทาง</strong>
-                        <span>ช่วยประสานข้อมูลและผลตรวจเบื้องต้น</span>
-                    </div>
-                </div>
+      </div>
 
 
-                <div class="hero-feature">
-                    <i class="fa-solid fa-language"></i>
+      <div class="hero-clean-features">
 
-                    <div>
-                        <strong>ล่ามและประสานงาน</strong>
-                        <span>ช่วยดูแลการสื่อสารและขั้นตอนสำคัญ</span>
-                    </div>
-                </div>
+        <div class="hero-feature">
 
+          <i class="fa-solid fa-file-medical"></i>
 
-                <div class="hero-feature">
-                    <i class="fa-solid fa-heart-circle-check"></i>
-
-                    <div>
-                        <strong>ดูแลต่อเนื่อง</strong>
-                        <span>ช่วยประสานก่อน ระหว่าง และหลังการรักษา</span>
-                    </div>
-                </div>
-
-            </div>
+          <div>
+            <strong>ประเมินก่อนเดินทาง</strong>
+            <span>ช่วยประสานข้อมูลและผลตรวจเบื้องต้น</span>
+          </div>
 
         </div>
 
 
-        <!-- RIGHT -->
+        <div class="hero-feature">
 
-        <div class="hero-clean-visual">
+          <i class="fa-solid fa-language"></i>
 
-            <div class="hero-clean-image">
-
-                <img src="about-t2c.png"
-                     alt="T2C Cancer Care">
-
-            </div>
-
-            <div class="hero-clean-note">
-
-                <div class="hero-note-icon">
-                    <i class="fa-solid fa-shield-heart"></i>
-                </div>
-
-                <div>
-                    <strong>CARE BEYOND BORDERS</strong>
-                    <span>ดูแลทุกขั้นตอนของการเดินทางเพื่อการรักษา</span>
-                </div>
-
-            </div>
+          <div>
+            <strong>ล่ามและประสานงาน</strong>
+            <span>ช่วยดูแลการสื่อสารและขั้นตอนสำคัญ</span>
+          </div>
 
         </div>
+
+
+        <div class="hero-feature">
+
+          <i class="fa-solid fa-heart-circle-check"></i>
+
+          <div>
+            <strong>ดูแลต่อเนื่อง</strong>
+            <span>ช่วยประสานก่อน ระหว่าง และหลังการรักษา</span>
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
+
+    <!-- RIGHT -->
+
+    <div class="hero-clean-visual">
+
+      <div class="hero-clean-image">
+
+        <img src="about-t2c.png"
+             alt="T2C Cancer Care">
+
+      </div>
+
+      <div class="hero-clean-note">
+
+        <div class="hero-note-icon">
+          <i class="fa-solid fa-shield-heart"></i>
+        </div>
+
+        <div>
+          <strong>CARE BEYOND BORDERS</strong>
+          <span>เชื่อมข้อมูล การเดินทาง และการดูแลไว้ในที่เดียว</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
-<!-- WHY -->
+
+
 <!-- ================= TRUST BAR ================= -->
 
 <section class="trust-bar">
 
+  <div class="container trust-grid">
+
     <div class="trust-item">
-    <div class="trust-icon">
+
+      <div class="trust-icon">
         <i class="fa-solid fa-hospital"></i>
-    </div>
-    <div>
+      </div>
+
+      <div>
         <strong>โรงพยาบาลพันธมิตร</strong>
-        <span>เฉพาะทางด้านโรคมะเร็ง</span>
-    </div>
-</div>
+        <span>ด้านโรคมะเร็ง</span>
+      </div>
 
-<div class="trust-item">
-    <div class="trust-icon">
+    </div>
+
+
+    <div class="trust-item">
+
+      <div class="trust-icon">
         <i class="fa-solid fa-user-doctor"></i>
-    </div>
-    <div>
-        <strong>ประเมินก่อนเดินทาง</strong>
-        <span>เตรียมข้อมูลก่อนตัดสินใจ</span>
-    </div>
-</div>
+      </div>
 
-<div class="trust-item">
-    <div class="trust-icon">
+      <div>
+        <strong>ข้อมูลก่อนเดินทาง</strong>
+        <span>เตรียมให้พร้อม</span>
+      </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+      <div class="trust-icon">
         <i class="fa-solid fa-language"></i>
-    </div>
-    <div>
-        <strong>ล่ามภาษาไทย</strong>
-        <span>ช่วยด้านการสื่อสาร</span>
-    </div>
-</div>
+      </div>
 
-<div class="trust-item">
-    <div class="trust-icon">
+      <div>
+        <strong>ภาษาไทย</strong>
+        <span>สื่อสารเข้าใจง่าย</span>
+      </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+      <div class="trust-icon">
         <i class="fa-solid fa-heart-pulse"></i>
-    </div>
-    <div>
+      </div>
+
+      <div>
         <strong>ดูแลต่อเนื่อง</strong>
-        <span>ประสานข้อมูลหลังการรักษา</span>
+        <span>ติดตามข้อมูลสำคัญ</span>
+      </div>
+
     </div>
-</div>
+
+  </div>
 
 </section>
-<!-- ================= WHY T2C BENTO ================= -->
+
+
+<!-- ================= WHY T2C ================= -->
 
 <section id="about" class="why-bento">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="why-bento-head">
+    <div class="why-bento-head">
 
-            <span>WHY T2C CANCER CARE</span>
+      <span>WHY T2C CANCER CARE</span>
 
-            <h2>
-                ดูแลทุกขั้นตอน
-                <strong>ให้การเดินทางเพื่อการรักษาง่ายขึ้น</strong>
-            </h2>
+      <h2>
+        เหตุผลที่ผู้ป่วยเลือก
+        <strong>T2C Cancer Care</strong>
+      </h2>
 
-            <p>
-                เราช่วยประสานงานตั้งแต่ก่อนเดินทาง
-                ระหว่างอยู่ประเทศจีน และติดตามหลังกลับประเทศไทย
-            </p>
-
-        </div>
-
-
-        <div class="why-bento-grid">
-
-            <div class="why-bento-card why-bento-main">
-
-                <div class="why-bento-icon">
-                    <i class="fa-solid fa-heart-pulse"></i>
-                </div>
-
-                <span class="why-bento-label">COMPLETE CARE</span>
-
-                <h3>ดูแลครบวงจร</h3>
-
-                <p>
-                    ให้คำปรึกษา ประสานโรงพยาบาล เอกสาร
-                    ล่าม การเดินทาง และติดตามผล
-                    เพื่อให้ผู้ป่วยและครอบครัวเตรียมตัวได้อย่างเป็นระบบ
-                </p>
-
-                <div class="why-bento-number">
-                    01
-                </div>
-
-            </div>
-
-
-            <div class="why-bento-card">
-
-                <div class="why-bento-icon">
-                    <i class="fa-solid fa-user-doctor"></i>
-                </div>
-
-                <h3>ประสานทีมแพทย์</h3>
-
-                <p>
-                    ช่วยประสานข้อมูลและขั้นตอนกับโรงพยาบาลพันธมิตร
-                </p>
-
-            </div>
-
-
-            <div class="why-bento-card">
-
-                <div class="why-bento-icon">
-                    <i class="fa-solid fa-language"></i>
-                </div>
-
-                <h3>ล่ามภาษาไทย</h3>
-
-                <p>
-                    ช่วยให้ผู้ป่วยและครอบครัวสื่อสารได้เข้าใจมากขึ้น
-                </p>
-
-            </div>
-
-
-            <div class="why-bento-card">
-
-                <div class="why-bento-icon">
-                    <i class="fa-solid fa-plane-departure"></i>
-                </div>
-
-                <h3>ดูแลการเดินทาง</h3>
-
-                <p>
-                    ช่วยประสานเรื่องเอกสาร การเดินทาง และขั้นตอนก่อนเข้ารักษา
-                </p>
-
-            </div>
-
-
-            <div class="why-bento-card why-bento-accent">
-
-                <div class="why-bento-icon">
-                    <i class="fa-solid fa-file-medical"></i>
-                </div>
-
-                <span class="why-bento-label">BEFORE YOU TRAVEL</span>
-
-                <h3>ประเมินข้อมูลก่อนเดินทาง</h3>
-
-                <p>
-                    เตรียมผลตรวจและข้อมูลการรักษา
-                    เพื่อช่วยให้การประสานงานมีความพร้อมมากขึ้น
-                </p>
-
-            </div>
-
-
-            <div class="why-bento-card">
-
-                <div class="why-bento-icon">
-                    <i class="fa-solid fa-house-medical-circle-check"></i>
-                </div>
-
-                <h3>ติดตามหลังกลับไทย</h3>
-
-                <p>
-                    ช่วยประสานข้อมูลสำหรับการติดตามผลตามแผนการรักษา
-                </p>
-
-            </div>
-
-        </div>
+      <p>
+        เน้นความชัดเจน การสื่อสารที่เข้าใจง่าย
+        และการดูแลที่เชื่อมต่อผู้ป่วยไทยกับโรงพยาบาลพันธมิตร
+      </p>
 
     </div>
 
+
+    <div class="why-bento-grid">
+
+      <div class="why-bento-card why-bento-main">
+
+        <div class="why-bento-icon">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+
+        <span class="why-bento-label">
+          COMPLETE CARE
+        </span>
+
+        <h3>ดูแลเป็นระบบ</h3>
+
+        <p>
+          รวมข้อมูลสำคัญไว้เป็นขั้นตอนที่เข้าใจง่าย
+        </p>
+
+        <div class="why-bento-number">
+          01
+        </div>
+
+      </div>
+
+
+      <div class="why-bento-card">
+
+        <div class="why-bento-icon">
+          <i class="fa-solid fa-user-doctor"></i>
+        </div>
+
+        <h3>เชื่อมต่อทีมแพทย์</h3>
+
+        <p>
+          ส่งต่อข้อมูลที่จำเป็นไปยังโรงพยาบาลพันธมิตร
+        </p>
+
+      </div>
+
+
+      <div class="why-bento-card">
+
+        <div class="why-bento-icon">
+          <i class="fa-solid fa-language"></i>
+        </div>
+
+        <h3>สื่อสารภาษาไทย</h3>
+
+        <p>
+          ช่วยลดความคลาดเคลื่อนด้านภาษาและรายละเอียด
+        </p>
+
+      </div>
+
+
+      <div class="why-bento-card">
+
+        <div class="why-bento-icon">
+          <i class="fa-solid fa-plane-departure"></i>
+        </div>
+
+        <h3>เตรียมการเดินทาง</h3>
+
+        <p>
+          รวบรวมสิ่งที่ต้องพร้อมก่อนออกเดินทาง
+        </p>
+
+      </div>
+
+
+      <div class="why-bento-card why-bento-accent">
+
+        <div class="why-bento-icon">
+          <i class="fa-solid fa-file-medical"></i>
+        </div>
+
+        <span class="why-bento-label">
+          BEFORE YOU TRAVEL
+        </span>
+
+        <h3>ตรวจความพร้อมของข้อมูล</h3>
+
+        <p>
+          ช่วยเช็กเอกสารและผลตรวจที่จำเป็น
+        </p>
+
+      </div>
+
+
+      <div class="why-bento-card">
+
+        <div class="why-bento-icon">
+          <i class="fa-solid fa-house-medical-circle-check"></i>
+        </div>
+
+        <h3>ติดตามข้อมูลต่อเนื่อง</h3>
+
+        <p>
+          รวบรวมข้อมูลสำคัญสำหรับขั้นตอนหลังการรักษา
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
-    
-    <!-- ================= VIDEO STORY ================= -->
+
+
+<!-- ================= VIDEO STORY ================= -->
 
 <section class="video-story">
 
-    <div class="container video-story-grid">
+  <div class="container video-story-grid">
 
-        <div class="video-story-content">
+    <div class="video-story-content">
 
-            <div class="video-story-content">
-
-    <span class="video-story-label">
+      <span class="video-story-label">
         T2C PATIENT JOURNEY
-    </span>
+      </span>
 
-    <h2>
+      <h2>
         เรื่องราวการดูแล
         <strong>ผ่านทุกช่วงเวลาสำคัญ</strong>
-    </h2>
+      </h2>
 
-    <p>
-        ชมภาพการประสานงานและการดูแลของ T2C
+      <p>
+        ชมภาพบรรยากาศและแนวทางการดูแลของ T2C
         สำหรับผู้ป่วยไทยที่เดินทางไปรักษาในประเทศจีน
-    </p>
+      </p>
 
-    <a href="https://line.me/R/ti/p/@394txvpy"
-       class="video-story-btn">
+      <a href="https://line.me/R/ti/p/@394txvpy"
+         class="video-story-btn">
 
         <i class="fa-brands fa-line"></i>
         ปรึกษาฟรีผ่าน LINE
 
-    </a>
-
-</div>
-
-        <div class="video-phone-wrap">
-
-            <div class="video-phone">
-
-                <video controls playsinline preload="metadata"
-                       poster="about-t2c.png">
-
-                    <source src="t2c-video.mp4" type="video/mp4">
-
-                </video>
-
-            </div>
-
-        </div>
+      </a>
 
     </div>
 
+
+    <div class="video-phone-wrap">
+
+      <div class="video-phone">
+
+        <video controls playsinline preload="metadata"
+               poster="about-t2c.png">
+
+          <source src="t2c-video.mp4"
+                  type="video/mp4">
+
+        </video>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
-<!-- SERVICES -->
-<!-- ================= ABOUT T2C ================= -->
+
 
 <!-- ================= ABOUT T2C ================= -->
 
 <section class="about-premium">
 
-    <div class="container about-premium-grid">
+  <div class="container about-premium-grid">
 
-        <!-- LEFT IMAGE -->
-        <div class="about-visual">
+    <!-- LEFT IMAGE -->
 
-            <div class="about-image-card">
-                <img src="./about-t2c-new.png?v=4"
-                     alt="T2C Cancer Care">
-            </div>
+    <div class="about-visual">
 
-            <div class="about-badge">
+      <div class="about-image-card">
 
-                <i class="fa-solid fa-heart-pulse"></i>
+        <img src="./about-t2c-new.png?v=4"
+             alt="T2C Cancer Care">
 
-                <div>
-                    <strong>CARE BEYOND BORDERS</strong>
-                    <span>เชื่อมผู้ป่วยไทยกับการรักษาในประเทศจีน</span>
-                </div>
+      </div>
 
-            </div>
+      <div class="about-badge">
 
+        <i class="fa-solid fa-heart-pulse"></i>
+
+        <div>
+          <strong>CARE BEYOND BORDERS</strong>
+          <span>เชื่อมผู้ป่วยไทยกับการรักษาในประเทศจีน</span>
         </div>
 
-
-        <!-- RIGHT CONTENT -->
-        <div class="about-content">
-
-            <span class="section-label">
-                ABOUT T2C CANCER CARE
-            </span>
-
-            <h2>
-                เชื่อมผู้ป่วยไทย
-                <span>กับการรักษามะเร็งในประเทศจีน</span>
-            </h2>
-
-            <p class="about-lead">
-                T2C Cancer Care ทำหน้าที่เป็นทีมประสานงานระหว่างผู้ป่วย
-                ครอบครัว และโรงพยาบาลพันธมิตร
-                เพื่อให้การเตรียมข้อมูลและการติดต่อโรงพยาบาล
-                มีความชัดเจนและเป็นระบบมากขึ้น
-            </p>
-
-            <div class="about-points">
-
-                <div class="about-point">
-                    <i class="fa-solid fa-circle-check"></i>
-
-                    <div>
-                        <strong>เชื่อมต่อโรงพยาบาลพันธมิตร</strong>
-                        <span>ช่วยประสานข้อมูลระหว่างผู้ป่วยและโรงพยาบาล</span>
-                    </div>
-                </div>
-
-                <div class="about-point">
-                    <i class="fa-solid fa-circle-check"></i>
-
-                    <div>
-                        <strong>ทีมงานสำหรับผู้ป่วยไทย</strong>
-                        <span>ช่วยด้านภาษา เอกสาร และการประสานงาน</span>
-                    </div>
-                </div>
-
-                <div class="about-point">
-                    <i class="fa-solid fa-circle-check"></i>
-
-                    <div>
-                        <strong>ข้อมูลชัดเจน เข้าใจง่าย</strong>
-                        <span>ช่วยให้ผู้ป่วยและครอบครัวเข้าใจข้อมูลได้ง่ายขึ้น</span>
-                    </div>
-                </div>
-
-            </div>
-
-           
-        </div>
+      </div>
 
     </div>
 
-    </section>
+
+    <!-- RIGHT CONTENT -->
+
+    <div class="about-content">
+
+      <span class="section-label">
+        ABOUT T2C CANCER CARE
+      </span>
+
+      <h2>
+        เชื่อมผู้ป่วยไทย
+        <span>กับการรักษามะเร็งในประเทศจีน</span>
+      </h2>
+
+      <p class="about-lead">
+        T2C Cancer Care คือทีมประสานงานสำหรับผู้ป่วยไทย
+        ที่ต้องการเข้าถึงโรงพยาบาลและข้อมูลการรักษามะเร็งในประเทศจีน
+        อย่างชัดเจนและเป็นระบบ
+      </p>
+
+
+      <div class="about-points">
+
+        <div class="about-point">
+
+          <i class="fa-solid fa-circle-check"></i>
+
+          <div>
+            <strong>เชื่อมต่อโรงพยาบาลพันธมิตร</strong>
+            <span>ส่งต่อข้อมูลสำคัญไปยังหน่วยงานที่เกี่ยวข้อง</span>
+          </div>
+
+        </div>
+
+
+        <div class="about-point">
+
+          <i class="fa-solid fa-circle-check"></i>
+
+          <div>
+            <strong>ทีมงานสำหรับผู้ป่วยไทย</strong>
+            <span>ช่วยให้ข้อมูลและการสื่อสารเข้าใจง่ายขึ้น</span>
+          </div>
+
+        </div>
+
+
+        <div class="about-point">
+
+          <i class="fa-solid fa-circle-check"></i>
+
+          <div>
+            <strong>จัดข้อมูลให้เป็นระบบ</strong>
+            <span>ลดความสับสนระหว่างการเตรียมตัวและติดต่อโรงพยาบาล</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
 
 <section id="service" class="services">
-<div class="container">
+
+  <div class="container">
 
     <h2>บริการของเรา</h2>
 
     <div class="service-grid">
 
-       <div class="service-item">
-    <i class="fa-solid fa-file-medical"></i>
-    <h3>ประเมินข้อมูล</h3>
-    <p>เตรียมผลตรวจและข้อมูลสำหรับประสานโรงพยาบาล</p>
-</div>
 
-<div class="service-item">
-    <i class="fa-solid fa-passport"></i>
-    <h3>เอกสารและเดินทาง</h3>
-    <p>ช่วยประสานเอกสาร วีซ่า และข้อมูลการเดินทาง</p>
-</div>
+      <div class="service-item">
 
-<div class="service-item">
-    <i class="fa-solid fa-language"></i>
-    <h3>ล่ามและประสานงาน</h3>
-    <p>ช่วยด้านภาษาและการสื่อสารที่เกี่ยวข้อง</p>
-</div>
+        <i class="fa-solid fa-file-medical"></i>
 
-<div class="service-item">
-    <i class="fa-solid fa-heart-circle-check"></i>
-    <h3>ติดตามข้อมูล</h3>
-    <p>ช่วยประสานข้อมูลสำหรับการติดตามผล</p>
-</div>
-    </section>
+        <h3>ประเมินข้อมูล</h3>
+
+        <p>
+          เตรียมผลตรวจและข้อมูลสำหรับส่งต่อโรงพยาบาล
+        </p>
+
+      </div>
 
 
+      <div class="service-item">
 
+        <i class="fa-solid fa-passport"></i>
+
+        <h3>เอกสารและเดินทาง</h3>
+
+        <p>
+          ช่วยจัดข้อมูลด้านเอกสาร วีซ่า และการเดินทาง
+        </p>
+
+      </div>
+
+
+      <div class="service-item">
+
+        <i class="fa-solid fa-language"></i>
+
+        <h3>ล่ามและประสานงาน</h3>
+
+        <p>
+          ช่วยด้านภาษาและการสื่อสารระหว่างการเข้ารับบริการ
+        </p>
+
+      </div>
+
+
+      <div class="service-item">
+
+        <i class="fa-solid fa-heart-circle-check"></i>
+
+        <h3>ติดตามข้อมูล</h3>
+
+        <p>
+          ช่วยรวบรวมข้อมูลสำหรับการติดตามผลภายหลัง
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 <!-- ================= PARTNER HOSPITAL ================= -->
 
-<section id="hospital" class="hospital hospital-premium">
+<section id="hospital"
+         class="hospital hospital-premium">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="hospital-heading">
+    <div class="hospital-heading">
 
-            <span class="hospital-label">
-                PARTNER HOSPITAL
-            </span>
+      <span class="hospital-label">
+        PARTNER HOSPITAL
+      </span>
 
-            <h2>โรงพยาบาลพันธมิตร</h2>
+      <h2>โรงพยาบาลพันธมิตร</h2>
 
-            <p>
-                T2C ประสานงานกับโรงพยาบาลเฉพาะทาง
-                เพื่อช่วยให้ผู้ป่วยเข้าถึงข้อมูลและเตรียมตัวก่อนการรักษา
-            </p>
-
-        </div>
-
-
-        <div class="hospital-premium-card">
-
-            <!-- IMAGE -->
-
-            <div class="hospital-photo">
-
-                <img src="about-t2c.png?v=5"
-     alt="Fuda Cancer Hospital">
-
-                <div class="hospital-photo-badge">
-                    <i class="fa-solid fa-hospital"></i>
-
-                    <div>
-                        <strong>Partner Hospital</strong>
-                        <span>Guangzhou, China</span>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- CONTENT -->
-
-            <div class="hospital-info">
-
-                <span class="hospital-small-label">
-                    CANCER CARE
-                </span>
-
-                <h3>Fuda Cancer Hospital</h3>
-
-                <p class="hospital-description">
-                    โรงพยาบาลที่ให้บริการด้านการรักษาโรคมะเร็ง
-                    โดย T2C ช่วยประสานงานข้อมูล การเตรียมตัว
-                    และขั้นตอนที่เกี่ยวข้องสำหรับผู้ป่วยไทย
-                </p>
-
-
-                <div class="hospital-features">
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        <span>
-                            รองรับการดูแลผู้ป่วยต่างชาติ
-                        </span>
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        <span>
-                            ประสานงานด้านภาษาไทย
-                        </span>
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        <span>
-                            ทีมแพทย์ด้านการรักษาโรคมะเร็ง
-                        </span>
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        <span>
-                            T2C ช่วยประสานงานก่อนการเดินทาง
-                        </span>
-                    </div>
-
-                </div>
-
-
-                <div class="hospital-actions">
-
-                    
-                </div>
-
-            </div>
-
-        </div>
+      <p>
+        T2C เชื่อมต่อผู้ป่วยกับโรงพยาบาลเฉพาะทาง
+        เพื่อให้เข้าถึงข้อมูลและเตรียมตัวก่อนการรักษาได้ง่ายขึ้น
+      </p>
 
     </div>
 
+
+    <div class="hospital-premium-card">
+
+
+      <!-- IMAGE -->
+
+      <div class="hospital-photo">
+
+        <img src="about-t2c.png?v=5"
+             alt="Fuda Cancer Hospital">
+
+        <div class="hospital-photo-badge">
+
+          <i class="fa-solid fa-hospital"></i>
+
+          <div>
+            <strong>Partner Hospital</strong>
+            <span>Guangzhou, China</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CONTENT -->
+
+      <div class="hospital-info">
+
+        <span class="hospital-small-label">
+          CANCER CARE
+        </span>
+
+        <h3>Fuda Cancer Hospital</h3>
+
+        <p class="hospital-description">
+          โรงพยาบาลที่ให้บริการด้านการรักษาโรคมะเร็ง
+          โดย T2C ช่วยจัดเตรียมข้อมูลและขั้นตอนที่เกี่ยวข้องสำหรับผู้ป่วยไทย
+        </p>
+
+
+        <div class="hospital-features">
+
+          <div>
+            <i class="fa-solid fa-circle-check"></i>
+            <span>รองรับผู้ป่วยต่างชาติ</span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-circle-check"></i>
+            <span>มีการสนับสนุนด้านภาษา</span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-circle-check"></i>
+            <span>ทีมแพทย์ด้านโรคมะเร็ง</span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-circle-check"></i>
+            <span>เตรียมข้อมูลก่อนเดินทาง</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
-<!-- TIMELINE -->
+
 
 <!-- ================= TREATMENT JOURNEY ================= -->
 
 <section class="treatment-journey">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="treatment-head">
+    <div class="treatment-head">
 
-            <span>HOW IT WORKS</span>
+      <span>HOW IT WORKS</span>
 
-            <h2>
-                ขั้นตอนการดูแล
-                <strong>ตั้งแต่ประเทศไทยถึงประเทศจีน</strong>
-            </h2>
+      <h2>
+        ขั้นตอนการดูแล
+        <strong>ตั้งแต่ประเทศไทยถึงประเทศจีน</strong>
+      </h2>
 
-            <p>
-                ทุกขั้นตอนถูกจัดให้เข้าใจง่าย
-                เพื่อให้ผู้ป่วยและครอบครัวเตรียมตัวได้อย่างเป็นระบบ
-            </p>
-
-        </div>
-
-
-        <div class="treatment-flow">
-
-            <div class="treatment-step">
-
-                <div class="step-number">01</div>
-
-                <div class="step-icon">
-                    <i class="fa-solid fa-comments"></i>
-                </div>
-
-                <h3>ปรึกษา T2C</h3>
-
-                <p>
-                    พูดคุยข้อมูลเบื้องต้นและความต้องการในการรักษา
-                </p>
-
-            </div>
-
-
-            <div class="flow-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-
-            <div class="treatment-step">
-
-                <div class="step-number">02</div>
-
-                <div class="step-icon">
-                    <i class="fa-solid fa-file-medical"></i>
-                </div>
-
-                <h3>ส่งผลตรวจ</h3>
-
-                <p>
-                    เตรียมประวัติและผลตรวจเพื่อใช้ในการประสานงาน
-                </p>
-
-            </div>
-
-
-            <div class="flow-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-
-            <div class="treatment-step treatment-step-main">
-
-                <div class="step-number">03</div>
-
-                <div class="step-icon">
-                    <i class="fa-solid fa-user-doctor"></i>
-                </div>
-
-                <h3>ประสานทีมแพทย์</h3>
-
-                <p>
-                    ติดต่อโรงพยาบาลและเตรียมข้อมูลสำหรับขั้นตอนการรักษา
-                </p>
-
-            </div>
-
-
-            <div class="flow-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-
-            <div class="treatment-step">
-
-                <div class="step-number">04</div>
-
-                <div class="step-icon">
-                    <i class="fa-solid fa-plane-departure"></i>
-                </div>
-
-                <h3>เดินทางไปจีน</h3>
-
-                <p>
-                    ประสานเอกสาร ล่าม การเดินทาง และขั้นตอนที่เกี่ยวข้อง
-                </p>
-
-            </div>
-
-
-            <div class="flow-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-
-            <div class="treatment-step">
-
-                <div class="step-number">05</div>
-
-                <div class="step-icon">
-                    <i class="fa-solid fa-heart-circle-check"></i>
-                </div>
-
-                <h3>ติดตามหลังรักษา</h3>
-
-                <p>
-                    ช่วยประสานข้อมูลต่อเนื่องหลังเดินทางกลับประเทศไทย
-                </p>
-
-            </div>
-
-        </div>
-
-
-            <a href="https://line.me/R/ti/p/@394txvpy">
-                <i class="fa-brands fa-line"></i>
-                ปรึกษาฟรี
-            </a>
-
-        </div>
+      <p>
+        แบ่งขั้นตอนให้ชัดเจน
+        เพื่อให้ผู้ป่วยและครอบครัวเห็นภาพการเตรียมตัวได้ง่ายขึ้น
+      </p>
 
     </div>
 
+
+    <div class="treatment-flow">
+
+
+      <div class="treatment-step">
+
+        <div class="step-number">01</div>
+
+        <div class="step-icon">
+          <i class="fa-solid fa-comments"></i>
+        </div>
+
+        <h3>ส่งข้อมูลเบื้องต้น</h3>
+
+        <p>
+          แจ้งข้อมูลสำคัญและเป้าหมายในการรักษา
+        </p>
+
+      </div>
+
+
+      <div class="flow-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+
+
+      <div class="treatment-step">
+
+        <div class="step-number">02</div>
+
+        <div class="step-icon">
+          <i class="fa-solid fa-file-medical"></i>
+        </div>
+
+        <h3>ส่งผลตรวจ</h3>
+
+        <p>
+          รวบรวมประวัติและผลตรวจที่เกี่ยวข้อง
+        </p>
+
+      </div>
+
+
+      <div class="flow-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+
+
+      <div class="treatment-step treatment-step-main">
+
+        <div class="step-number">03</div>
+
+        <div class="step-icon">
+          <i class="fa-solid fa-user-doctor"></i>
+        </div>
+
+        <h3>ประสานทีมแพทย์</h3>
+
+        <p>
+          ส่งข้อมูลให้โรงพยาบาลเพื่อเตรียมขั้นตอนถัดไป
+        </p>
+
+      </div>
+
+
+      <div class="flow-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+
+
+      <div class="treatment-step">
+
+        <div class="step-number">04</div>
+
+        <div class="step-icon">
+          <i class="fa-solid fa-plane-departure"></i>
+        </div>
+
+        <h3>เตรียมเดินทาง</h3>
+
+        <p>
+          จัดการเอกสาร ภาษา และรายละเอียดการเดินทาง
+        </p>
+
+      </div>
+
+
+      <div class="flow-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+
+
+      <div class="treatment-step">
+
+        <div class="step-number">05</div>
+
+        <div class="step-icon">
+          <i class="fa-solid fa-heart-circle-check"></i>
+        </div>
+
+        <h3>ติดตามผล</h3>
+
+        <p>
+          รวบรวมข้อมูลสำหรับการติดตามหลังกลับประเทศไทย
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
 </section>
+
+
 <!-- ================= FAQ ================= -->
 
 <section class="faq-section">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="faq-head">
+    <div class="faq-head">
 
-            <span>FREQUENTLY ASKED QUESTIONS</span>
+      <span>
+        FREQUENTLY ASKED QUESTIONS
+      </span>
 
-            <h2>คำถามที่พบบ่อย</h2>
+      <h2>คำถามที่พบบ่อย</h2>
 
-            <p>
-                ข้อมูลเบื้องต้นสำหรับผู้ป่วยและครอบครัว
-                ที่กำลังพิจารณาการเดินทางไปรักษาที่ประเทศจีน
-            </p>
-
-        </div>
-
-
-        <div class="faq-list">
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>ต้องเตรียมเอกสารอะไรบ้างก่อนส่งให้โรงพยาบาล?</span>
-                    <i class="fa-solid fa-plus"></i>
-                </button>
-
-                <div class="faq-answer">
-                    <p>
-                        โดยทั่วไปควรเตรียมประวัติการรักษา
-                        ผลตรวจทางห้องปฏิบัติการ ผลพยาธิวิทยา
-                        และผลตรวจภาพถ่ายทางการแพทย์ที่เกี่ยวข้อง
-                        เพื่อใช้ประกอบการประสานข้อมูลเบื้องต้น
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>สามารถส่งผลตรวจให้ประเมินก่อนเดินทางได้หรือไม่?</span>
-                    <i class="fa-solid fa-plus"></i>
-                </button>
-
-                <div class="faq-answer">
-                    <p>
-                        สามารถส่งข้อมูลและผลตรวจเบื้องต้นให้ T2C
-                        ช่วยประสานกับโรงพยาบาลก่อนตัดสินใจเดินทางได้
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>มีล่ามภาษาไทยระหว่างการรักษาหรือไม่?</span>
-                    <i class="fa-solid fa-plus"></i>
-                </button>
-
-                <div class="faq-answer">
-                    <p>
-                        T2C ช่วยประสานด้านภาษาและการสื่อสาร
-                        เพื่อให้ผู้ป่วยและครอบครัวเข้าใจขั้นตอนต่าง ๆ ได้ง่ายขึ้น
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>T2C ดูแลเฉพาะตอนเดินทางไปจีนหรือไม่?</span>
-                    <i class="fa-solid fa-plus"></i>
-                </button>
-
-                <div class="faq-answer">
-                    <p>
-                        การดูแลครอบคลุมตั้งแต่ก่อนเดินทาง
-                        ระหว่างการเข้ารับบริการในประเทศจีน
-                        และช่วยประสานข้อมูลสำหรับการติดตามผลหลังกลับไทย
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>ต้องเริ่มต้นติดต่ออย่างไร?</span>
-                    <i class="fa-solid fa-plus"></i>
-                </button>
-
-                <div class="faq-answer">
-                    <p>
-                        สามารถติดต่อ T2C ผ่าน LINE
-                        เพื่อแจ้งข้อมูลเบื้องต้นและส่งเอกสารที่เกี่ยวข้อง
-                        จากนั้นทีมงานจะช่วยแนะนำขั้นตอนต่อไป
-                    </p>
-                </div>
-            </div>
-
-        </div>
+      <p>
+        ข้อมูลเบื้องต้นสำหรับผู้ป่วยและครอบครัว
+        ที่กำลังพิจารณาการเดินทางไปรักษาที่ประเทศจีน
+      </p>
 
     </div>
 
-</section>
+
+    <div class="faq-list">
 
 
-<!-- ================= FINAL CTA ================= -->
+      <div class="faq-item">
 
-<section class="final-cta">
+        <button class="faq-question">
 
-    <div class="container final-cta-box">
+          <span>
+            ต้องเตรียมเอกสารอะไรบ้างก่อนส่งให้โรงพยาบาล?
+          </span>
 
-        <div class="final-cta-content">
+          <i class="fa-solid fa-plus"></i>
 
-            <span>T2C CANCER CARE</span>
+        </button>
 
-            <h2>
-                ทุกการรักษา<br>
-                เริ่มต้นจากการมีข้อมูลที่ชัดเจน
-            </h2>
+        <div class="faq-answer">
 
-            <p>
-                หากคุณหรือคนในครอบครัวกำลังมองหาทางเลือกในการรักษา
-                สามารถส่งข้อมูลเบื้องต้นให้ทีม T2C ช่วยประสานได้
-            </p>
+          <p>
+            โดยทั่วไปควรเตรียมประวัติการรักษา
+            ผลตรวจทางห้องปฏิบัติการ ผลพยาธิวิทยา
+            และผลตรวจภาพถ่ายทางการแพทย์ที่เกี่ยวข้อง
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+
+          <span>
+            สามารถส่งผลตรวจก่อนเดินทางได้หรือไม่?
+          </span>
+
+          <i class="fa-solid fa-plus"></i>
+
+        </button>
+
+        <div class="faq-answer">
+
+          <p>
+            สามารถส่งข้อมูลและผลตรวจเบื้องต้น
+            เพื่อใช้ประกอบการติดต่อโรงพยาบาลก่อนตัดสินใจเดินทางได้
+          </p>
 
         </div>
 
+      </div>
 
-        <div class="final-cta-action">
 
-            <a href="https://line.me/R/ti/p/@394txvpy">
-                <i class="fa-brands fa-line"></i>
-                ปรึกษาฟรีผ่าน LINE
-            </a>
+      <div class="faq-item">
 
-            <small>
-                ดูแลและประสานงานด้วยความใส่ใจ
-            </small>
+        <button class="faq-question">
+
+          <span>
+            มีล่ามภาษาไทยระหว่างการรักษาหรือไม่?
+          </span>
+
+          <i class="fa-solid fa-plus"></i>
+
+        </button>
+
+        <div class="faq-answer">
+
+          <p>
+            T2C ช่วยด้านภาษาและการสื่อสาร
+            เพื่อให้ผู้ป่วยและครอบครัวเข้าใจข้อมูลต่าง ๆ ได้ง่ายขึ้น
+          </p>
 
         </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+
+          <span>
+            T2C ดูแลเฉพาะตอนเดินทางไปจีนหรือไม่?
+          </span>
+
+          <i class="fa-solid fa-plus"></i>
+
+        </button>
+
+        <div class="faq-answer">
+
+          <p>
+            การดูแลครอบคลุมตั้งแต่การเตรียมตัวก่อนเดินทาง
+            ระหว่างอยู่ประเทศจีน
+            และการติดตามข้อมูลหลังกลับประเทศไทย
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+
+          <span>
+            ต้องเริ่มต้นติดต่ออย่างไร?
+          </span>
+
+          <i class="fa-solid fa-plus"></i>
+
+        </button>
+
+        <div class="faq-answer">
+
+          <p>
+            เริ่มจากแจ้งข้อมูลเบื้องต้นและส่งเอกสารที่เกี่ยวข้อง
+            จากนั้นทีมงานจะแนะนำลำดับขั้นตอนต่อไป
+          </p>
+
+        </div>
+
+      </div>
+
 
     </div>
 
-</section>
-<!-- CONTACT -->
-
-<section id="contact" class="contact">
-
-<div class="container">
-
-<h2>ติดต่อเรา</h2>
-
-<p>
-
-พร้อมให้คำปรึกษาโดยไม่มีค่าใช้จ่าย
-
-</p>
-
-<a href="https://line.me/R/ti/p/@394txvpy" class="btn-main">
-    ปรึกษาฟรีผ่าน LINE
-</a>
-
-</div>
+  </div>
 
 </section>
 
-<!-- FOOTER -->
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact"
+         class="contact">
+
+  <div class="container">
+
+    <h2>ติดต่อ T2C</h2>
+
+    <p>
+      ส่งข้อมูลเบื้องต้นเพื่อสอบถามขั้นตอนการประสานการรักษา
+    </p>
+
+    <a href="https://line.me/R/ti/p/@394txvpy"
+       class="btn-main">
+
+      <i class="fa-brands fa-line"></i>
+      ติดต่อผ่าน LINE
+
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-<div class="container">
+  <div class="container">
 
-<img src="logo.png" class="footer-logo" alt="T2C Cancer Care">
-<p>
+    <img src="logo.png"
+         class="footer-logo"
+         alt="T2C Cancer Care">
 
-T2C Cancer Care
+    <p>
+      T2C Cancer Care
+    </p>
 
-</p>
+    <p>
+      ประสานงานรักษาโรคมะเร็งในประเทศจีน
+    </p>
 
-<p>
+    <p>
+      © 2026 T2C Cancer Care
+    </p>
 
-ประสานงานรักษาโรคมะเร็งในประเทศจีน
-
-</p>
-
-<p>
-
-© 2026 T2C Cancer Care
-
-</p>
-
-</div>
+  </div>
 
 </footer>
 
-<!-- Floating LINE -->
-
-<a href="https://line.me/R/ti/p/@394txvpy" class="btn-main">
-    ปรึกษาฟรีผ่าน LINE
-</a>
 
 <script src="script.js"></script>
 
