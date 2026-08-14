@@ -7448,3 +7448,8 @@ footer p{
     }
 
 }
+
+.hospital-photo > img{
+    object-fit:cover !important;
+    object-position:center 58% !important;
+}
