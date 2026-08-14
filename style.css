@@ -7470,3 +7470,11 @@ background-color:red !important;
     background:url("./hospital-network.jpg") center/cover no-repeat !important;
     min-height:470px !important;
 }
+
+.hospital-network-photo{
+    background-image:url("./hospital-network.png") !important;
+    background-size:cover !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+    min-height:470px !important;
+}
