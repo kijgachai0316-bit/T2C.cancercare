@@ -7465,3 +7465,8 @@ footer p{
 background-color:red !important;
     border:5px solid red !important;
 }
+
+.hospital-network-photo{
+    background:url("./hospital-network.jpg") center/cover no-repeat !important;
+    min-height:470px !important;
+}
