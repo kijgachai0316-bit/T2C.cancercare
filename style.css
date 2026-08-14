@@ -7461,3 +7461,7 @@ footer p{
     background-repeat:no-repeat !important;
     min-height:470px !important;
 }
+
+background-color:red !important;
+    border:5px solid red !important;
+}
