@@ -7453,3 +7453,11 @@ footer p{
     object-fit:cover !important;
     object-position:center 58% !important;
 }
+
+.hospital-network-photo{
+    background-image:url("./hospital-network.jpg") !important;
+    background-size:cover !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+    min-height:470px !important;
+}
